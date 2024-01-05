@@ -56,7 +56,7 @@ const submit = () => {
           <template #footer>
             <BaseButtons>
               <BaseButton type="submit" color="info" label="Login" />
-              <BaseButton to="/dashboard" color="info" outline label="Dashboard" />
+              <BaseButton to="/SalesCRM/sales/sales-dashboard" color="info" outline label="Dashboard" />
             </BaseButtons>
           </template>
         </CardBox>
