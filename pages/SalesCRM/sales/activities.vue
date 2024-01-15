@@ -68,6 +68,9 @@
 </template>
 
 <script setup>
+definePageMeta({
+  middleware: 'auth-check'
+})
 import Tasks from '@/components/SalesCRM/Sales/activities/Tasks'
 import Events from '@/components/SalesCRM/Sales/activities/Events'
 import Calls from '@/components/SalesCRM/Sales/activities/Calls'

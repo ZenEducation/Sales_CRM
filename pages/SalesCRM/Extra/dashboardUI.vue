@@ -1,4 +1,7 @@
 <script setup>
+definePageMeta({
+  middleware: 'auth-check'
+})
 import { computed } from "vue";
 import { ref, reactive } from "vue";
 import { useMainStore } from "@/stores/main.js";
@@ -66,7 +69,7 @@ const menuClick = (event, item) => {
   if (item.isLogout) {
     AuthStore.logout();
     // console.log("Clicked On Logout");
-    router.push("/dashboardUI");
+    router.push("/");
   }
 };
 </script>

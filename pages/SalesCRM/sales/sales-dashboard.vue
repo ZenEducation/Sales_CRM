@@ -194,6 +194,9 @@
 </template>
 
 <script setup>
+definePageMeta({
+  middleware: 'auth-check'
+})
 import {
    mdiMenuDown,
   mdiFullscreen ,

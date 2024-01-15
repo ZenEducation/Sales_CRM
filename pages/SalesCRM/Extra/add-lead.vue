@@ -80,6 +80,9 @@
 </template>
 
 <script setup>
+definePageMeta({
+  middleware: 'auth-check'
+})
 // imports
 import SectionMain from "@/components/Sections/SectionMain.vue";
 import BaseIcon from "@/components/Display/BaseIcon.vue";

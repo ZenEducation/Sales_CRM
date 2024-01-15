@@ -84,6 +84,9 @@
 </template>
 
 <script setup>
+definePageMeta({
+  middleware: 'auth-check'
+})
 import PremButtonMenu from "@/components/Buttons/ButtonMenu.vue";
 import BaseIcon from "@/components/Display/BaseIcon.vue";
 import SearchDownMenu from "@/components/SalesCRM/Sales/SearchDownMenu.vue";

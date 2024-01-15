@@ -219,6 +219,9 @@ class="add_new_deal_popup"
 </template>
 
 <script setup>
+definePageMeta({
+  middleware: 'auth-check'
+})
 import BaseIcon from "@/components/Display/BaseIcon.vue";
 import BaseButton from "@/components/Buttons/BaseButton.vue";
 import SectionMain from "@/components/Sections/SectionMain.vue";

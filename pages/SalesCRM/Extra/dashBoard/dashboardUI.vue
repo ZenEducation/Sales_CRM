@@ -1,4 +1,7 @@
 <script setup>
+definePageMeta({
+  middleware: 'auth-check'
+})
 import { computed } from "vue";
 import { ref, reactive } from "vue";
 import { useMainStore } from "@/stores/main.js";

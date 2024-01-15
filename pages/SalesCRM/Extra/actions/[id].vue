@@ -530,6 +530,9 @@
 </template>
 
 <script setup>
+definePageMeta({
+  middleware: 'auth-check'
+})
 import CardBox from "@/components/Cards/CardBox.vue";
 import UserAvatarCurrentUserWithUpload from "@/components/Avatars/UserAvatarCurrentUserWithUpload.vue";
 import PremFormField from "@/components/Forms/FormField.vue";

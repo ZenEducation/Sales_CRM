@@ -53,7 +53,7 @@ const handleSubmit = async () => {
 
     if (registrationConfirmed) {
       console.log(registrationConfirmed);
-      router.push("/auth/login");
+      router.push("/");
     }
   } catch (err) {
     errorMsg.value = err;

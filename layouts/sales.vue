@@ -40,15 +40,15 @@ router.beforeEach(() => {
   layoutStore.isAsideMobileExpanded = false;
 });
 
-const menuClick = (event, item) => {
+const menuClick = async (event, item) => {
   if (item.isToggleLightDark) {
     styleStore.setDarkMode();
   }
 
   if (item.isLogout) {
-    AuthStore.logout();
+    await AuthStore.logout();
     // console.log("Clicked On Logout");
-    router.push("/auth/login");
+    router.push("/");
   }
 };
 </script>
